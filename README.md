@@ -33,6 +33,7 @@ The following Bootstrap components are used in this project to enhance the user 
 ## Folder Structure
 
 The folder structure is organized to keep different types of files separate and maintain clean and scalable code. Below is the structure of the project:
+
 ![folder](https://github.com/user-attachments/assets/7b2b0c71-7ab6-425c-af49-47a650fd2b3c)
 
 
