@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="box">
+        <a class="navbar-brand" href="#">
+          <img src="./Images/logo.png" alt="Travel Agency Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('Images/background-img.png');">
+    <div class="hero-content text-center">
+      <h1>Discover Your Next Destination</h1>
+      <p>Plan your perfect getaway with us</p>
+      <a href="#packages" class="btn btn-primary">Explore Packages</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 text-center about-section">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-description">
+        We are a dedicated travel agency committed to making your travel dreams come true. Our experienced team is here
+        to help you plan the perfect getaway.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Flight Booking</h5>
+              <p class="card-text">Book your flights at the best prices using our platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hotel Booking</h5>
+              <p class="card-text">Find the perfect accommodation for your stay.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Custom Packages</h5>
+              <p class="card-text">Tailor-made travel packages just for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Package Section -->
+  <section id="packages" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Travel Packages</h2>
+      <div class="row justify-content-center">
+        <!-- Package 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card package-card">
+            <img src="./Images/Europe.png" class="card-img-top" alt="Beach Paradise">
+            <div class="card-body text-center">
+              <h5 class="card-title">Europe</h5>
+              <p class="card-text">Enjoy a week in a tropical paradise.</p>
+              <p class="price">$999</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#packageModal1">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Package 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card package-card">
+            <img src="./Images/London.png" class="card-img-top" alt="Mountain Adventure">
+            <div class="card-body text-center">
+              <h5 class="card-title">London</h5>
+              <p class="card-text">Experience the thrill of the mountains.</p>
+              <p class="price">$799</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#packageModal2">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Package 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card package-card">
+            <img src="./Images/Rome.png" class="card-img-top" alt="City Escape">
+            <div class="card-body text-center">
+              <h5 class="card-title">Rome</h5>
+              <p class="card-text">Explore the vibrant city life.</p>
+              <p class="price">$599</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#packageModal3">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Package 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card package-card">
+            <img src="./Images/greece.png" class="card-img-top" alt="City Escape">
+            <div class="card-body text-center">
+              <h5 class="card-title">Greece</h5>
+              <p class="card-text">Explore the vibrant city life.</p>
+              <p class="price">$599</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#packageModal3">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <form>
+            <div class="form-group mb-4">
+              <label for="name" class="font-weight-bold">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group mb-4">
+              <label for="email" class="font-weight-bold">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group mb-4">
+              <label for="message" class="font-weight-bold">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block py-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <!-- Add a logo or other content here if needed -->
+          <span class="text-muted">© 2024 Company, Inc</span>
+        </a>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3 mr-2">
+          <a class="text-muted" href="#">
+            <i class="bi bi-twitter" style="font-size: 24px;"></i> <!-- Twitter Icon -->
+          </a>
+        </li>
+        <li class="ms-3 mr-2">
+          <a class="text-muted" href="#">
+            <i class="bi bi-instagram" style="font-size: 24px;"></i> <!-- Instagram Icon -->
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="bi bi-facebook" style="font-size: 24px;"></i> <!-- Facebook Icon -->
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <!-- Modals for Packages -->
+  <div class="modal fade" id="packageModal1" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel1"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel1">Europe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Enjoy a week in a tropical paradise with all-inclusive amenities.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="packageModal2" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel2"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel2">London</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Experience the thrill of the mountains with guided tours and activities.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="packageModal3" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel3"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel3">Rome</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Explore the vibrant city life with guided tours and local experiences.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="packageModal4" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel4"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel4">Greece</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Immerse yourself in rich cultures with our specially curated tours.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Popper.js (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
